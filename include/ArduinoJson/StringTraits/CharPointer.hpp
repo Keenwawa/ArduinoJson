@@ -39,7 +39,7 @@ struct CharPointerTraits {
 
   static const bool has_append = false;
   static const bool has_equals = true;
-  static const bool should_duplicate = false;
+  static const bool should_duplicate = true;
 };
 
 template <>
