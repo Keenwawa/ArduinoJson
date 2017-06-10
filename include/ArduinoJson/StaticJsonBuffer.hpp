@@ -67,6 +67,10 @@ class StaticJsonBufferBase : public JsonBufferBase<StaticJsonBufferBase> {
     return doAlloc(bytes);
   }
 
+  void clear() {
+    _size = 0;
+  }
+
   String startString() {
     return String(this);
   }
